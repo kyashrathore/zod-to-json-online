@@ -143,7 +143,9 @@ const ConversionTool: React.FC = () => {
               language={getInputLanguage(sourceFormat)}
               value={inputCode}
               onChange={setInputCode}
-              placeholder={`Enter your ${sourceFormat === 'zod' ? 'Zod Schema' : 'JSON Schema'} here...`}
+              placeholder={`${sourceFormat === 'zod' ? `import {z} from "zod";
+// enter you zod schema below, export default schema you want to convert to json
+` : 'JSON Schema here'}`}
             />
           </div>
         </div>

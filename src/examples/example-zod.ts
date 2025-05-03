@@ -1,4 +1,6 @@
-export const exampleZodSchema = `z.object({
+export const exampleZodSchema = `
+import {z} from "zod";
+z.object({
   name: z.string().min(2).max(50),
   age: z.number().int().positive().optional(),
   email: z.string().email(),

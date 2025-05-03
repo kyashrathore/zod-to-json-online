@@ -16,7 +16,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             </h1>
           </div>
           <a 
-            href="https://github.com" 
+            href="https://github.com/kyashrathore/zod-to-json-online" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-white transition-colors"
